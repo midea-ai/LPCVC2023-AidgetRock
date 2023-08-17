@@ -22,8 +22,8 @@ The model submitted for the 2023 LPCVC and implementation code for training and 
 |Model|Input Image Size|Accuracy|Latency|Description|Download|
 | - | - | - | - | - | -|
 |Topformer_base|512x512|61.1%|70ms|teacher model|[Download Link](https://drive.google.com/file/d/1k_7BsVcLyLxHr8f8iFoxQHlUiEHtgEAE/view?usp=drive_link)|
-|Topformer_tiny_modifed|288x288|15.3ms|54.5%|undistilled student model|[Download Link](https://drive.google.com/file/d/1ks1EMBykaXH7-n772FmlJ-XMFVtgaBl_/view?usp=drive_link)|
-|Topformer_tiny_modifed|288x288|15.3ms|55.4%|distilled student model|[Download Link](https://drive.google.com/file/d/1ZZzZCwENig7wBh9W82HwbZ8jcZ6UNj7D/view?usp=drive_link)|
+|Topformer_tiny_modified|288x288|54.5%|15.3ms|undistilled student model|[Download Link](https://drive.google.com/file/d/1ks1EMBykaXH7-n772FmlJ-XMFVtgaBl_/view?usp=drive_link)|
+|Topformer_tiny_modified|288x288|55.4%|15.3ms|distilled student model|[Download Link](https://drive.google.com/file/d/1ZZzZCwENig7wBh9W82HwbZ8jcZ6UNj7D/view?usp=drive_link)|
 |Topformer_tiny_encoder|-|-|-|backbone|[Download Link](https://drive.google.com/file/d/1Y3TswTPNFIIqHUVae8A30-rLW1IWR1zb/view?usp=drive_link)|
 
 ## How to install and setup
