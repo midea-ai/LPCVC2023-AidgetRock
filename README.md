@@ -76,6 +76,7 @@ pip install -v -e .
 ## Training
 ### Step 1: Dataset path
 Set the dataset path in `local_configs/_base_/datasets/LPCVC.py`->`data_root`.
+
 Set the dataset path in `local_configs/_base_/datasets/LPCVC_distill.py`->`data_root`.
 
 ### Step 2: Train
@@ -103,6 +104,7 @@ python tools_mmseg/mytest.py local_configs/ttopformer/topformer_tiny_288x288_160
 ### Step 4: Knowledge distillation
 
 Modify the distillation configuration file: `local_configs/distill/cwd_seg_topformer_512b_distill_288t.py`->`student_checkpoint`.
+
 Then, run the following command:
 ```
 python tools_mmraz/mmseg/train_mmseg.py local_configs/distill/cwd_seg_topformer_512b_distill_288t.py --work-dir <path-to-save-checkpoints>
@@ -123,6 +125,7 @@ python tools_mmraz/mmseg/mytest_mmseg.py local_configs/distill/cwd_seg_topformer
 
 ### Step 5: Convert to ONNX
 Modify the path of the best model into the python file: `split_mmrazor_pth.py`->`cls_model_path`. 
+
 Then, run `split_mmrazor_pth.py`, You can get a new `pth` file. 
 Convert this `pth` file to onnx file by following command:
 ```
